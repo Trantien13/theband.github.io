@@ -1,0 +1,77 @@
+    /* cách 1 để chỉnh ipad*/
+
+    /* @media(min-width:768px) and (max-width:1023px){
+        #content .content-total{
+            padding:64px 8px;
+            max-width:100%;
+        }
+    } */
+    @media(min-width:1024px){
+        .search-menu{
+            display:none;
+        }
+    }
+    @media(max-width:768px){
+        .nav{
+            display: block;
+        }
+        .nav > li:first-child{    /* lấy dòng đầu tiên*/
+            display: inline-block;
+            /* width: 90%; */
+        }
+        .header .search-menu{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .nav >li{
+            display: block;
+        }
+        .search-begin{
+            display:none;
+        }
+        .header .search-menu{
+            float:right;
+            padding :0 24px;
+            cursor: pointer;     /* hiệu ứng đổi chuột*/
+    
+        }
+        .header .nav3{
+            color:aliceblue;    
+            font-size:16px;
+            line-height:46px;
+    
+        }
+        .header {
+            overflow:hidden;  /* ẩn đi những cái bị tràn khỏi thẻ*/
+        }
+        .nav .nav2{
+            position:initial;    /* để nó đẩy lên khỏi background.. kiểu z-index=1*/
+        }
+        .nav .nav2 li {
+            padding:2px 23px;
+        }
+        .nav .nav2 li:hover a {
+            color: black;
+            background-color: rgb(183, 249, 16);
+        }
+        #band .member .member-img{
+            width: 100%;
+        }
+        .s-tickets{
+            width:100%;
+        }
+        .s-put-contact{
+            width:100%;
+        }
+        .font-content{
+            padding: 12px !important;
+        }
+        .modal-container{
+            margin:0 7px;
+        }
+        .s-put-put{
+            width:100%;
+            margin:16px 0;
+        }
+    }
